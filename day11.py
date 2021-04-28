@@ -34,8 +34,12 @@ def get_movie_longest_runtime():
     runtime in minutes, for latter consider adding a _get_runtime helper"""
     res = {}
     root = get_tree()
-    for child in root.iter("movie"):
+    [
         res.update({child.get("title"): child.get("runtime")})
+        for child in root.iter("movie")
+    ]
+    # for child in root.iter("movie"):
+    #     res.update({child.get("title"): child.get("runtime")})
 
     longest = [(value, key) for key, value in res.items()]
 
