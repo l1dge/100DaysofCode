@@ -3,3 +3,5 @@ __pycache__/*
 .gitattributes
 .DS_Store
 .vscode
+.pytest_cache
+*.pyc
