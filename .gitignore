@@ -1,1 +1,5 @@
 __pycache__/*
+.gitignore
+.gitattributes
+.DS_Store
+.vscode
